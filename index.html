@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Oluoch - Virtual Assistant & Executive Assistant Portfolio">
+    <title>Rachel Oluoch | Virtual Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="bg-[#fff0f5] text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-pink-400 to-purple-400 rounded-2xl flex items-center justify-center text-white text-2xl shadow-inner">💖</div>
+                <h1 class="heading-font text-2xl font-bold tracking-tight text-purple-600">Rachel Oluoch</h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="nav-link text-gray-700 hover:text-purple-600">About</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-purple-600">Services</a>
+                <a href="#case-studies" class="nav-link text-gray-700 hover:text-purple-600">Case Studies</a>
+                <a href="#experience" class="nav-link text-gray-700 hover:text-purple-600">Experience</a>
+                <a href="#skills" class="nav-link text-gray-700 hover:text-purple-600">Skills</a>
+                <a href="#education" class="nav-link text-gray-700 hover:text-purple-600">Education</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <!-- LinkedIn & GitHub -->
+                <a href="https://linkedin.com/in/rachel-oluoch" target="_blank" 
+                   class="flex items-center gap-1 text-purple-600 hover:text-pink-500">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/Reckie02" target="_blank" 
+                   class="flex items-center gap-1 text-purple-600 hover:text-pink-500">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                
+                <!-- CV Download -->
+                <a href="https://your-cv-link-here.com/Rachel-Oluoch-VA-CV.pdf" 
+                   target="_blank"
+                   class="px-5 py-2.5 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-3xl font-medium flex items-center gap-2 hover:shadow-lg hover:scale-105">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-purple-600">
+                    <i id="menu-icon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-6 text-center">
+            <div class="flex flex-col gap-6 text-lg font-medium">
+                <a href="#about" onclick="toggleMobileMenu()" class="text-gray-700">About</a>
+                <a href="#services" onclick="toggleMobileMenu()" class="text-gray-700">Services</a>
+                <a href="#case-studies" onclick="toggleMobileMenu()" class="text-gray-700">Case Studies</a>
+                <a href="#experience" onclick="toggleMobileMenu()" class="text-gray-700">Experience</a>
+                <a href="#skills" onclick="toggleMobileMenu()" class="text-gray-700">Skills</a>
+                <a href="#education" onclick="toggleMobileMenu()" class="text-gray-700">Education</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-md px-5 py-2 rounded-3xl text-sm font-medium border border-pink-200">
+                    <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
+                    Open to new opportunities • Mombasa, Kenya
+                </div>
+                
+                <h1 class="heading-font text-6xl md:text-7xl font-bold leading-none text-gray-900">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">Rachel</span> 💕
+                </h1>
+                
+                <p class="text-2xl md:text-3xl text-purple-700 font-light">
+                    Your calm, organized, and proactive Virtual Assistant
+                </p>
+                
+                <p class="max-w-md text-gray-600 text-lg">
+                    1.5+ years supporting busy leaders with inbox zero, flawless calendars, 
+                    and smooth operations — all from East Africa with a smile.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#case-studies" 
+                       class="px-8 py-4 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-3xl font-semibold text-lg shadow-lg hover:shadow-xl flex items-center gap-3">
+                        See my VA case studies
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="#contact" 
+                       class="px-8 py-4 border-2 border-purple-300 text-purple-700 rounded-3xl font-semibold text-lg flex items-center gap-3 hover:bg-purple-50">
+                        Let's work together
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image / Illustration -->
+            <div class="flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="w-80 h-80 md:w-96 md:h-96 bg-white/60 backdrop-blur-2xl rounded-[4rem] shadow-2xl border border-white/60 p-4 flex items-center justify-center overflow-hidden">
+                        <div class="text-center">
+                            <div class="mx-auto w-52 h-52 rounded-3xl bg-gradient-to-br from-pink-200 to-purple-200 flex items-center justify-center text-8xl shadow-inner mb-6">
+                                👩🏾‍💼
+                            </div>
+                            <p class="text-purple-600 font-medium">Rachel Oluoch</p>
+                            <p class="text-sm text-gray-500">Virtual Assistant • Mombasa, Kenya</p>
+                            <div class="mt-4 flex justify-center gap-2">
+                                <div class="px-4 py-1 bg-white rounded-2xl text-xs font-medium flex items-center gap-1 shadow">
+                                    <i class="fa-solid fa-check text-green-500"></i>
+                                    Inbox Zero
+                                </div>
+                                <div class="px-4 py-1 bg-white rounded-2xl text-xs font-medium flex items-center gap-1 shadow">
+                                    <i class="fa-solid fa-calendar text-purple-500"></i>
+                                    Calendar Ninja
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative floating hearts -->
+                    <div class="absolute -top-6 -left-6 text-5xl animate-bounce">💖</div>
+                    <div class="absolute -bottom-8 right-8 text-4xl animate-bounce delay-300">✨</div>
+                    <div class="absolute top-12 right-12 text-3xl animate-bounce delay-700">🌸</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <h2 class="section-header text-4xl heading-font font-bold mb-6">A little bit about me</h2>
+                <div class="prose text-lg text-gray-600">
+                    <p>I'm a proactive Executive Assistant with 1.5 years of experience providing high-level administrative and operational support in fast-paced environments. Based in Mombasa, Kenya, I thrive in remote settings and love helping visionary leaders reclaim their time.</p>
+                    <p>Whether it's managing inboxes, coordinating across time zones, or streamlining processes, I bring calm, clarity, and a solutions-focused mindset to every task. Certified through ALX Africa’s Virtual Assistant program and passionate about personal growth, I’m ready to become your reliable right-hand from East Africa.</p>
+                </div>
+            </div>
+            <div class="md:col-span-5 bg-white rounded-3xl p-8 shadow-sm border border-pink-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-heart text-3xl text-pink-400"></i>
+                    <h3 class="text-2xl font-semibold text-purple-600">My superpowers</h3>
+                </div>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex gap-3 items-start"><span class="text-pink-400 text-xl mt-px">✦</span> Turning chaos into calm</li>
+                    <li class="flex gap-3 items-start"><span class="text-pink-400 text-xl mt-px">✦</span> Making leaders look like they have 25-hour days</li>
+                    <li class="flex gap-3 items-start"><span class="text-pink-400 text-xl mt-px">✦</span> Cross-timezone magic (EAT ↔ PST/EST)</li>
+                    <li class="flex gap-3 items-start"><span class="text-pink-400 text-xl mt-px">✦</span> Always one step ahead</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-4xl heading-font font-bold text-center mb-4">How I can support you</h2>
+            <p class="text-center text-gray-500 mb-12 max-w-md mx-auto">Tailored virtual assistant services with a soft touch and sharp execution</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card-hover bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-3xl p-8 flex flex-col items-center text-center">
+                    <div class="w-14 h-14 bg-pink-100 text-pink-500 rounded-2xl flex items-center justify-center text-3xl mb-6">📧</div>
+                    <h3 class="font-semibold text-xl mb-3">Inbox Management</h3>
+                    <p class="text-gray-600">Zero inbox, prioritized replies, templated responses, and never miss a follow-up.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-purple-50 to-white border border-purple-100 rounded-3xl p-8 flex flex-col items-center text-center">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-500 rounded-2xl flex items-center justify-center text-3xl mb-6">🗓️</div>
+                    <h3 class="font-semibold text-xl mb-3">Calendar &amp; Scheduling</h3>
+                    <p class="text-gray-600">Seamless coordination across time zones, meeting prep, and travel arrangements.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-3xl p-8 flex flex-col items-center text-center">
+                    <div class="w-14 h-14 bg-pink-100 text-pink-500 rounded-2xl flex items-center justify-center text-3xl mb-6">📋</div>
+                    <h3 class="font-semibold text-xl mb-3">Operations &amp; Admin</h3>
+                    <p class="text-gray-600">Client onboarding, data entry, Google Workspace mastery, and process optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: VA CASE STUDIES -->
+    <section id="case-studies" class="max-w-7xl mx-auto px-6 py-20 bg-[#fff0f5]">
+        <div class="text-center mb-12">
+            <span class="px-5 py-2 bg-gradient-to-r from-pink-100 to-purple-100 text-purple-600 text-sm font-medium rounded-3xl">✨ Real Results</span>
+            <h2 class="section-header text-4xl heading-font font-bold mt-4">VA Case Studies</h2>
+            <p class="text-gray-600 max-w-lg mx-auto mt-4">Here’s how I’ve turned chaos into calm for busy teams — even in a volunteer role, I delivered measurable impact.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Case Study 1 -->
+            <div class="card-hover bg-white rounded-3xl p-8 shadow-sm border border-pink-100 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="text-5xl">📧</div>
+                    <span class="text-xs font-medium px-4 py-1 bg-pink-100 text-pink-600 rounded-2xl">MEWA Library • 2024</span>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">From Inbox Chaos to Inbox Zero</h3>
+                <p class="text-gray-600 flex-1">Handled 50+ daily visitor and client inquiries via email &amp; WhatsApp. Created templated replies and Google Forms for common questions.</p>
+                <div class="mt-8 pt-8 border-t border-pink-100">
+                    <div class="flex justify-between text-sm">
+                        <div><span class="font-semibold text-pink-500">50+</span> inquiries/day</div>
+                        <div class="text-right"><span class="font-semibold text-pink-500">40%</span> faster resolution</div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">“Rachel turned our messy inbox into a smooth, professional system.” — Space Coordinator</p>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="card-hover bg-white rounded-3xl p-8 shadow-sm border border-purple-100 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="text-5xl">🗓️</div>
+                    <span class="text-xs font-medium px-4 py-1 bg-purple-100 text-purple-600 rounded-2xl">MEWA Library • 2025</span>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Calendar &amp; Event Coordination Magic</h3>
+                <p class="text-gray-600 flex-1">Coordinated travel, meetings, and virtual events for the Space Coordinator while managing participant registrations and follow-ups across time zones.</p>
+                <div class="mt-8 pt-8 border-t border-purple-100">
+                    <div class="flex justify-between text-sm">
+                        <div><span class="font-semibold text-purple-500">Zero</span> scheduling conflicts</div>
+                        <div class="text-right"><span class="font-semibold text-purple-500">100%</span> on-time events</div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Saved the team hours every week by handling all logistics flawlessly.</p>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="card-hover bg-white rounded-3xl p-8 shadow-sm border border-pink-100 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="text-5xl">📊</div>
+                    <span class="text-xs font-medium px-4 py-1 bg-pink-100 text-pink-600 rounded-2xl">MEWA Library • 2024-2025</span>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Digital Systems Transformation</h3>
+                <p class="text-gray-600 flex-1">Built Google Forms + Excel dashboards for data collection and library access. Streamlined onboarding for interns and volunteers.</p>
+                <div class="mt-8 pt-8 border-t border-pink-100">
+                    <div class="flex justify-between text-sm">
+                        <div><span class="font-semibold text-pink-500">60%</span> faster document retrieval</div>
+                        <div class="text-right"><span class="font-semibold text-pink-500">25+</span> interns/volunteers onboarded smoothly</div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Improved overall library efficiency and created reusable systems anyone can use.</p>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center text-sm text-purple-400 mt-10">Every case study is 100% real from my hands-on experience. I’m ready to create the same results for your business 💕</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="section-header text-4xl heading-font font-bold mb-12">Experience</h2>
+        
+        <div class="space-y-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <div class="bg-white rounded-3xl px-6 py-3 inline-block text-sm font-medium border border-pink-200">
+                        Oct 2024 – Present
+                    </div>
+                    <p class="mt-3 text-purple-600 font-semibold">Administrative Assistant</p>
+                    <p class="text-gray-500">Volunteer American Corner Mombasa – MEWA Library</p>
+                </div>
+                <div class="flex-1 bg-white rounded-3xl p-8 shadow-sm">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-pink-400 mt-1"></i> Organized digital data collection and entry systems using Google Forms &amp; Excel dashboards, improving library access systems</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-pink-400 mt-1"></i> Responded to 50+ library visitor inquiries daily, resolving issues efficiently while maintaining strong relationships</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-pink-400 mt-1"></i> Coordinated travel arrangements, meetings, and virtual events for the space coordinator</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-pink-400 mt-1"></i> Assisted with basic HR tasks including preparing onboarding documents for interns and volunteers</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-pink-400 mt-1"></i> Supported event coordination for logistics workshops and follow-up communications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-4xl heading-font font-bold text-center mb-12">My Toolkit</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-[#fff0f5] rounded-3xl p-6 text-center card-hover">
+                    <i class="fa-brands fa-google text-4xl text-blue-500 mb-3"></i>
+                    <p class="font-medium">Google Workspace</p>
+                    <p class="text-xs text-gray-500">Gmail • Calendar • Drive • Sheets</p>
+                </div>
+                <div class="bg-[#fff0f5] rounded-3xl p-6 text-center card-hover">
+                    <i class="fa-solid fa-laptop text-4xl text-purple-500 mb-3"></i>
+                    <p class="font-medium">Asana • Trello • Slack • Zoom</p>
+                    <p class="text-xs text-gray-500">Project &amp; collaboration tools</p>
+                </div>
+                <div class="bg-[#fff0f5] rounded-3xl p-6 text-center card-hover">
+                    <i class="fa-solid fa-chart-simple text-4xl text-pink-500 mb-3"></i>
+                    <p class="font-medium">Microsoft Office 365</p>
+                    <p class="text-xs text-gray-500">Excel • Word • PowerPoint</p>
+                </div>
+                <div class="bg-[#fff0f5] rounded-3xl p-6 text-center card-hover">
+                    <i class="fa-solid fa-canva text-4xl text-pink-400 mb-3"></i>
+                    <p class="font-medium">Canva (basic design)</p>
+                    <p class="text-xs text-gray-500">Social media &amp; visuals</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="uppercase text-xs tracking-widest text-purple-400 mb-4">Soft skills that make me different</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-6 py-3 bg-white rounded-3xl shadow text-sm font-medium">Proactive Problem-Solving</span>
+                    <span class="px-6 py-3 bg-white rounded-3xl shadow text-sm font-medium">Client Communication</span>
+                    <span class="px-6 py-3 bg-white rounded-3xl shadow text-sm font-medium">Remote Collaboration</span>
+                    <span class="px-6 py-3 bg-white rounded-3xl shadow text-sm font-medium">Time Management</span>
+                    <span class="px-6 py-3 bg-white rounded-3xl shadow text-sm font-medium">Attention to Detail</span>
+                    <span class="px-6 py-3 bg-white rounded-3xl shadow text-sm font-medium">Adaptability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="section-header text-4xl heading-font font-bold mb-12">Education &amp; Certifications</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-3xl p-8">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-semibold">Bachelor of Science in Information Technology (BSIT)</h3>
+                        <p class="text-purple-600">Technical University of Mombasa, Kenya</p>
+                    </div>
+                    <span class="text-sm bg-pink-100 text-pink-600 px-4 py-1 rounded-2xl">Expected Dec 2026</span>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-8">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-semibold">ALX Virtual Assistant Training</h3>
+                        <p class="text-purple-600">ALX Africa • May 2025 – Jul 2025</p>
+                    </div>
+                    <span class="text-sm bg-purple-100 text-purple-600 px-4 py-1 rounded-2xl">Completed</span>
+                </div>
+            </div>
+            
+            <div class="col-span-2 bg-gradient-to-r from-pink-50 to-purple-50 rounded-3xl p-8">
+                <h3 class="font-medium mb-6 text-purple-600">Additional Certifications</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-certificate text-purple-400"></i> McKinsey Forward Program – Jul 2025</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-certificate text-pink-400"></i> ALX AI Career Essentials – Aug 2024</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-certificate text-purple-400"></i> ALX Professional Foundations – May 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-gradient-to-br from-pink-100 to-purple-100 py-20">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-5xl heading-font font-bold mb-4">Ready to get your time back?</h2>
+            <p class="text-xl text-purple-700 mb-10">Let’s chat! I respond within 24 hours (East Africa Time).</p>
+            
+            <form id="contact-form" class="space-y-6 bg-white rounded-3xl p-10 shadow-xl">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" id="name" placeholder="Your name" 
+                           class="w-full px-6 py-4 rounded-3xl border border-gray-200 focus:border-purple-300 outline-none">
+                    <input type="email" id="email" placeholder="Your email" 
+                           class="w-full px-6 py-4 rounded-3xl border border-gray-200 focus:border-purple-300 outline-none">
+                </div>
+                <textarea id="message" rows="5" placeholder="Tell me about your needs..." 
+                          class="w-full px-6 py-4 rounded-3xl border border-gray-200 focus:border-purple-300 outline-none"></textarea>
+                
+                <button type="button" onclick="submitForm()" 
+                        class="w-full py-5 bg-gradient-to-r from-pink-400 to-purple-400 text-white text-xl font-semibold rounded-3xl shadow-lg hover:shadow-2xl flex items-center justify-center gap-3">
+                    Send message 
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+            
+            <div class="mt-10 flex justify-center gap-8 text-sm">
+                <a href="mailto:oluochrk@gmail.com" class="flex items-center gap-2 text-purple-600 hover:text-pink-500">
+                    <i class="fa-solid fa-envelope"></i> oluochrk@gmail.com
+                </a>
+                <a href="tel:+254742381294" class="flex items-center gap-2 text-purple-600 hover:text-pink-500">
+                    <i class="fa-solid fa-phone"></i> +254 742 381 294
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-purple-950 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-purple-300">© 2026 Rachel Oluoch • Made with 💖 in Mombasa, Kenya</p>
+            <p class="text-xs text-purple-400 mt-3">Soft girlie VA energy meets serious execution</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
