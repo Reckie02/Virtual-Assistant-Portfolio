@@ -13,7 +13,7 @@
         }
         
         body {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: montserrat;
         }
         
         .heading-font {
@@ -55,6 +55,14 @@
             bottom: -8px;
             left: 0;
             border-radius: 9999px;
+        }
+        .relative{
+            
+        }
+
+        .relative img {
+            border-radius: 50%;
+            height: auto;
         }
         
         .card-hover {
